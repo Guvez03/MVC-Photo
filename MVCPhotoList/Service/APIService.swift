@@ -8,10 +8,7 @@
 import Foundation
 
 class APIService {
-    // Simulate a long waiting for fetching
-  // escaping araştır
-  // global?
-  // .iso8601
+
     func fetchPopularPhoto( complete: @escaping ( _ success: Bool, _ photos: [Photo], _ error: Error? )->() ) {
         DispatchQueue.global().async {
           

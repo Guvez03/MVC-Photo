@@ -16,14 +16,13 @@ class PhotoListViewController: UIViewController {
     var photos : [Photo] = [Photo]()
     
     var selectedIndex : IndexPath?
-    // lazy weak öğren
     lazy var apiService: APIService = {
         return APIService()
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         initView()
         initData()
     }
